@@ -11,7 +11,7 @@ namespace AniTelegramBot
         public IMongoCollection<usop1> userInfo;
         public Commands()
         {
-            var client = new MongoClient("mongodb+srv://dbUser:rOkHhgCUCVnUK8OQ@cluster0-pnk7e.azure.mongodb.net/test?retryWrites=true&w=majority");
+            var client = new MongoClient("DB link");
             var database = client.GetDatabase("AniTelegramBotStatuses");
             userInfo = database.GetCollection<usop1>("Statuses");
         }
