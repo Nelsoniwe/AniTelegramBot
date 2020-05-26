@@ -20,7 +20,7 @@ namespace AniTelegramBot
 
         static void Main(string[] args)
         {
-            botClient = new TelegramBotClient("1087413028:AAG-SZaELYmFWHmZr5GE2SmWL-NAWLJa1YY") { Timeout = TimeSpan.FromSeconds(10) };
+            botClient = new TelegramBotClient("TelegramBotApi key") { Timeout = TimeSpan.FromSeconds(10) };
 
             var me = botClient.GetMeAsync().Result;
             Console.WriteLine($"Bot id:" + me.Id);
